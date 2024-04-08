@@ -1,0 +1,64 @@
+body {
+    background-color: white;
+    background-image: url('../icons/10078817.png');
+    background-size: cover;
+    font-family: "Sora", sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.gif-reading {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex: 1;
+}
+
+.heading-text p {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.return a {
+    text-decoration: none;
+    color: rgb(13, 12, 12);
+    margin-left: 25px;
+    font-size: 30px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center;
+}
+
+.contact-links {
+    display: flex; /* Set to display flex */
+}
+
+.contact-links a {
+    margin: 0 10px; /* Add margin for spacing between links */
+}
+
+.contact-links a img {
+    width: 50px; 
+    height: auto; 
+}
+
+.nav-bar {
+    padding: 10px 0; /* Add some padding for better spacing */
+    text-align: right;
+}
+
+.nav-bar a {
+    color: rgb(57, 57, 57);
+    text-decoration: none;
+    margin: 0 20px; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-bar a:hover {
+    color: whitesmoke;
+}

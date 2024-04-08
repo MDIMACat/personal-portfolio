@@ -1,0 +1,143 @@
+/* CSS */
+body {
+    background-color: white;
+    background-image: url('../icons/10078817.png');
+    background-size: cover;
+    font-family: "Sora", sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-bar a {
+    color: rgb(57, 57, 57);
+    text-align: center;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px; 
+    font-weight: bold; 
+}
+
+.nav-bar {
+    padding: 10px 0; 
+    text-align: right;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+.return a {
+    text-decoration: none;
+    color: rgb(13, 12, 12);
+    margin-left: 25px;
+    font-size: 30px;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px 0; 
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container img {
+    width: 50px; 
+    height: 50px; 
+}
+
+.additional li {
+    list-style: none;
+
+}
+
+.languages li {
+    list-style: none;
+}
+
+.education-box {
+    display: flex;
+
+}
+
+.higher-education{
+    margin-right: 50px;
+}
+
+.highschool{
+    margin-left: 50px;
+}
+.education-box li {
+    list-style: none;
+}
+
+.skills-set {
+    display: flex;
+    text-align: center;
+    padding: 20px; /* Add padding for spacing */
+}
+
+.hard-skills {
+    /* Remove margin */
+}
+
+.hard-skills li {
+    margin-bottom: 9px;
+    list-style: none;
+}
+
+.soft-skills {
+    /* Remove margin */
+}
+
+.soft-skills li {
+    margin-bottom: 9px;
+    list-style: none;
+}
+.work-experience,
+.references {
+    
+    padding: 20px; /* Padding for spacing */
+    margin-bottom: 20px; /* Margin at the bottom */
+}
+
+.work-experience h2,
+.references h2 {
+    font-size: 24px; /* Larger font size for section headings */
+    margin-bottom: 10px; /* Bottom margin for heading */
+}
+
+.work-experience ul,
+.references table {
+    list-style: none; /* Remove bullet points from lists */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.work-experience ul li,
+.references table tr {
+    margin-bottom: 10px; /* Margin between items */
+}
+
+.references table {
+    width: 100%; /* Table takes up full width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.references table th,
+.references table td {
+    padding: 8px; /* Padding for table cells */
+    border-bottom: 1px solid #ddd; /* Bottom border for table rows */
+}
+
+.references table th {
+    text-align: left; /* Align header text to the left */
+    background-color: #f2f2f2; /* Light gray background for header */
+    font-weight: bold; /* Bold font for header */
+}
+
