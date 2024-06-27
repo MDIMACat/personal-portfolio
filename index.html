@@ -13,17 +13,19 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <div class="top-header">
             <div class="title">
 
             </div>
             <div class="nav">
                 <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about-me">About me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#contact-me">Contact Me</a></li>
-                    <li><a href="./docs/Sne CV-1(updated).pdf">Curriculam Vitae</a></li>
+                    <li><a href="./docs/CV.pdf">Curriculum Vitae</a></li>
                 </ul>
             </div>
         </div>
@@ -33,13 +35,98 @@
                 <div class="main-header-text">
                     <p class="name"><span>Siduduzile Snenhlanhla Mdima</span></p>
                     <p class="occupation">Web Developer</p>
-                </div>
-                <div class="main-header-text">
                     <p class="About-me-Heading">Hi there!<br> I’m a web developer based in <span>Richards Bay,
                             KZN</span></p>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="about-me" id="about-me">
+        <div class="hello">
+            <p>Hello! Im Siduduzile Snenhlanhla Mdima 👩‍💻</p>
+        </div>
+
+        <section class="more-about-me" id="more-about-me">
+            <div class="about-me-content">
+                 <div class="about-me-image">
+                    <a href="https://github.com/MDIMACat" target="_blank" rel="noopener">
+                        <img src="./images/blackFemaleCoding.jpg" alt="Profile image">
+                    </a>
+                </div>
+                <div class="about-me-text">
+                    <h2>About Me</h2>
+                    <p>
+                        I am an aspiring Full Stack Web Developer with a passion for creating innovative solutions to real-world problems. I am currently a learner at Umuzi.org, where I am honing my skills in web development. I have a strong foundation in HTML, CSS, and JavaScript, and I have strong knowledge in Python and C. I am also familiar with Git and GitHub, and I have experience working with APIs. I am a quick learner and a team player, and I am always looking for new challenges to help me grow as a developer.
+                    </p>
+                </div>
+               
+            </div>
+
+        </section>
+
+
+         <section class="skills" id="skills">
+            <h2 class="skill-header">My Top Skills</h2>
+
+            <div class="skills-wrapper">
+                <div class="first-set animate__animated animate__pulse">
+                <a href="https://devdocs.io/c/" target="_blank" rel="noopener"> <img
+                        src="./images/C.png"
+                        alt="C language logo"
+                        loading="lazy"
+                        class="icon icon-card"
+                    >
+                </a>
+
+                <a href="https://devdocs.io/css/" target="_blank" rel="noopener">
+                    <img
+                        src="./images/second-css.png"
+                        alt="CSS logo"
+                        loading="lazy"
+                        class="icon icon-card"
+                    >
+                </a>
+                <a href="https://devdocs.io/html/" target="_blank" rel="noopener">
+                    <img
+                        src="./images/html.png"
+                        alt="HTML logo"
+                        loading="lazy"
+                        class="icon icon-card"
+                    >
+                </a>
+                
+                </div>
+
+                <div class="second-set animate__animated animate__pulse">
+                <a href="https://devdocs.io/javascript/" target="_blank" rel="noopener">
+                    <img
+                        src="./images/JavaScript.png"
+                        alt="JavaScript logo"
+                        loading="lazy"
+                        class="icon icon-card"
+                    >
+                </a>
+                <a href="https://devdocs.io/python/" target="_blank" rel="noopener">
+                    <img
+                        src="./images/Python.png"
+                        alt="Python logo"
+                        loading="lazy"
+                        class="icon icon-card"
+                    >
+                </a>
+                <a href="https://devdocs.io/git/" target="_blank" rel="noopener">
+                    <img
+                        src="./images/Git.png"
+                        alt="Git logo"
+                        loading="lazy"
+                        class="icon icon-card"
+                    >
+                </a>
+            
+                </div>
+            </div>
+        </section>
     </div>
 
     <div id="projects" class="projects">
@@ -49,99 +136,100 @@
         <div class="project-content">
             <div class="project">
                 <div class="project-image">
-                    <img src="./images/cool-banana.jpg" alt="">
+                    <a href="https://github.com/franklinobiukwu/pld-plus" target="_blank" rel="noopener">
+                        <img src="./images/PLD_PLUS.png" alt="Man working on a laptop image">
+                    </a>
                 </div>
                 <div class="project-text">
-                    <h3>Project 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                    <h3>PLD +</h3>
+                    <p>
+                        <strong>(In Progress)</strong> <br>
+                        Is a scheduling application designed to streamline and enhance PLD (Peer Learning Days) for students, specifically ALX students. <br>
+                        Our mission is to facilitate efficient, effective, and seamless planning for students, regardless of their geographical locations. <br>
+                        The application is still a work in progress and is currently in the development phase. It will be deployed as soon as it is completed.
+                     </p>
                 </div>
             </div>
             <div class="project">
                 <div class="project-image">
-                    <img src="./images/cool-banana.jpg" alt="">
+                    <a href="https://github.com/MDIMACat/monty" target="_blank" rel="noopener">
+                        <img src="./images/Monty.png" alt="Monty image banner">
+                    </a>
                 </div>
                 <div class="project-text">
-                    <h3>Project 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                    <h3>Monty 0.98 Scripting Language</h3>
+                   <p>
+    Monty 0.98 is a scripting language that compiles into Monty byte codes, similar to how Python operates.<br>
+     This project involves creating an interpreter for Monty ByteCodes files, which are typically saved with a .m extension.<br> The interpreter processes these files, executing one instruction per line to manipulate a unique stack.<br>
+      The goal is to facilitate the use of Monty byte codes for efficient script execution and stack management.<br>
+      This project showcases my skills in developing command-line tools, byte code interpretation, and understanding of scripting languages.
+            </p>
+
                 </div>
             </div>
-            <div class="project">
-                <div class="project-image">
-                    <img src="./images/cool-banana.jpg" alt="">
-                </div>
-                <div class="project-text">
-                    <h3>Project 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                </div>
-            </div>
+            <!--Add More Projects-->
         </div>
     </div>
 
     <div id="education" class="education">
         <div class="education-heading">
             <h1>Education</h1>
-
             <div class="education-line-content">
                 <div class="education-line-text">
                     <a href="https://greytownhigh.co.za/" target="_blank" rel="noopener">
                         <img src="./images/Greytown-high.jpg" alt="Greytown High logo">
-                        
                     </a>
                     <p>Greytown High School</p>
                     <p>Grade 12 (Matric)<br>2013</p>
                 </div>
                 <div class="education-line-text">
                     <a href="https://www.boston.ac.za/" target="_blank" rel="noopener">
-                        
                         <img src="./images/Boston.jpg" alt="Boston City Campus and Business College logo">
-                       
                     </a>
                     <p>Boston City Campus</p>
                     <p>Diploma in Financial Accounting<br>2016-2019</p>
                 </div>
                 <div class="education-line-text">
-                     <a href="https://www.umuzi.org/" target="_blank" rel="noopener">
-                        
+                    <a href="https://www.umuzi.org/" target="_blank" rel="noopener">
                         <img src="./images/umuzi.jpg" alt="Greytown High">
-                        
                     </a>
                     <p>Umuzi.org</p>
                     <p>Full Stack Web Developer<br> Learnership<br>2024-Present</p>
                 </div>
             </div>
-
         </div>
-
     </div>
 
-    <div id="contact-me">
-    
-            <div class="contact-me-heading">
-                <h1>Contact Me</h1>
+    <footer id="contact-me">
+        <div class="contact-me-heading">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact-me-content">
+            <div class="contact-me-text">
+                <p><strong>Phone:</strong> 066-187-1026</p>
+                <p><strong>Email:</strong> romanmdima@gmail.com</p>
             </div>
-            <div class="contact-me-content">
-                <div class="contact-me-text">
-                    <p><strong>Phone:</strong> 0661871026</p>
-                    <p><strong>Email:</strong> romanmdima@gmail.com</p>
-                </div>
-                <div class="contact-links">
-                    <div class="linkedin">   
+            <div class="contact-links">
+                <div class="linkedin">
                     <a href="https://www.linkedin.com/in/s-nenhlanhla-siduduzile-mdima-a309761aa" target="_blank" rel="noopener">
-                        <img src="./images/6214710_linkedin_logo_icon.png" alt="linkedin icon">
+                        <img src="./images/linkedin.png" alt="linkedin icon">
                     </a>
-                    </div>
-                    <div class="github">
-                    <a href="https://github.com/mdimacat" target="_blank" rel="noopener"><img src="./images/8666686_github_icon.png" alt="github icon"></a>
-                    </div>
-            
-                    <div class="medium">
-                    <a href="https://medium.com/@romanmdima" target="_blank" rel="noopener"><img src="./images/5282543_blog_medium_medium logo_icon.png" alt="medium icon"></a>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/mdimacat" target="_blank" rel="noopener">
+                        <img src="./images/github.png" alt="github icon">
+                    </a>
+                </div>
+
+                <div class="medium">
+                    <a href="https://medium.com/@romanmdima" target="_blank" rel="noopener"><img src="./images/Medium.png" alt="medium icon"></a>
                 </div>
             </div>
-    </div>
-
-
-    
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Siduduzile Snenhlanhla Mdima. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
