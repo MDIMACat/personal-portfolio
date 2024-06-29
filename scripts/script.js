@@ -10,4 +10,6 @@ for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener('click', () => {
         navbarLinks.classList.remove('active');
     });
+
+    
 }

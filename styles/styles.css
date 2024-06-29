@@ -157,9 +157,9 @@ html {
 
     .nav.active {
         display: flex;
-        width: 50%;  /* Ensure the navbar takes up full width when active */
-        height: 100%; /* Adjust the height to fit content */
-        padding: 20px 0px; /* Add some padding for spacing */
+        width: 50%; 
+        height: 100%;
+        padding: 20px 0px;
         right: 0;
     }
 }
@@ -204,6 +204,8 @@ html {
     justify-items: center;
 }
 
+
+
 .about-me-content {
     display: grid;
     gap: 2rem;
@@ -230,6 +232,8 @@ html {
   }
 }
 
+
+
 .about-me-content {
     display: grid;
     gap: 2rem;
@@ -237,6 +241,7 @@ html {
     align-items: center;
     padding: 2rem;
 }
+
 
 .about-me-content img {
     width: 80%;
@@ -502,11 +507,6 @@ html {
         text-align: left;
     }
 
-    .nav ul {
-        grid-template-columns: repeat(6, auto);
-        gap: 10px;
-        padding-right: 20px;
-    }
 
     .main-header {
         justify-content: center;
@@ -520,10 +520,15 @@ html {
     .main-header-text .About-me-Heading {
         padding-top: 2rem;
         font-size: 2rem;
+        align-items: center;
     }
 
     .project-content {
         grid-template-columns: 1fr;
+    }
+
+    .project-text {
+        padding: 20px;
     }
 
     .education-line-content {
@@ -533,14 +538,28 @@ html {
 
 
 @media (max-width: 480px) {
+
     .nav ul {
-        grid-template-columns: repeat(6, auto);
-        font-size: 0.6rem;
-        padding-right: 10px;
+        padding-left: 30px;
+    }
+
+    .hello p {
+        padding-left: 30px;
     }
 
     .project-image img {
         width: 80%;
+    }
+
+    .about-me-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-content img {
+        width: 80%;
+        height: auto;
+        padding: 20px ;
     }
 
     .education-line-content img {
@@ -555,9 +574,7 @@ html {
 
 @media (max-width: 320px) {
     .nav ul {
-        grid-template-columns: repeat(6, auto);
-        font-size: 0.6rem;
-        padding-left: 10px;
+        padding-left: 30px;
     }
 
     .project-image img {
