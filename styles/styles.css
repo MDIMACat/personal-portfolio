@@ -16,8 +16,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 .header {
     display: grid;
     grid-template-rows: auto auto;
@@ -198,10 +196,108 @@ html {
     color: #8a8a8a;
 }
 
+
+
+.weather-content {
+    display: flex;
+    
+}
+
+#weather-info p{
+    font-weight: 220;
+    margin-top: 50px;
+    margin-left: 2px;
+}
+
+.weather-content img {
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
+    padding-top: 15px;
+    margin-left: 45px;
+    margin-right: 14px;
+    animation: cloudy 3s ease-in-out infinite;
+}
+
+
+@keyframes cloudy {
+      0%, 100% {
+        transform: scale(1);
+      }
+      25%, 75% {
+        transform: scale(1.1);
+      }
+      50% {
+        transform: scale(1.5);
+      }
+    }
+
+.news-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 135px;
+}
+
+
+.news-headline {
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 2px 2px 2px 2px #8a8a8a;
+    border-radius: 20px;
+}
+
+.headline img{
+    width: 200px;
+    height: auto;
+}
+
+.headline h3 {
+    font-weight: 500;
+}
+
+.headline-content a{
+    text-decoration: none;
+    color: #000;
+    transition: color 0.5s ease-in-out;
+}
+
+a:hover {
+    color: #ae8f80;
+    transform: scale(1.1);
+}
+
+.news-heading h1{
+    font-weight: 600;
+    padding-bottom: 50px;
+    animation: news-heading 3s ease-in forwards;
+}
+
+@keyframes news-heading {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-25px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
 .about-me {
     padding: 4rem 0;
     display: grid;
     justify-items: center;
+    margin-top: 20px;
 }
 
 
@@ -383,7 +479,7 @@ html {
 #education {
     padding-top: 4rem;
     padding-bottom: 4rem;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 
 .education-heading {
@@ -498,6 +594,38 @@ html {
     .education-line-content {
         grid-template-columns: repeat(2, 1fr);
     }
+
+     .weather-content {
+        margin-left: 25px;
+        margin-top: 60px;
+    }
+    
+    .weather-content img {
+        margin-left: 0;
+    }
+
+    .news-content {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .news-headline {
+
+    }
+
+    .news-headlines-gif img {
+        width: 80px;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+
+    .headline-content p{
+        text-align: left;
+        font-size: 12px;
+    }
+
+
+    
 }
 
 
@@ -534,6 +662,34 @@ html {
     .education-line-content {
         grid-template-columns: 1fr;
     }
+
+    .weather-content {
+        margin-left: 25px;
+        margin-top: 60px;
+    }
+    
+    .weather-content img {
+        margin-left: 0;
+    }
+
+    .news-content {
+        display: flex;
+        margin-top: 10px;
+    }
+
+
+    .news-headlines-gif img {
+        width: 80px;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+
+    .headline-content a{
+        text-align: left;
+        font-size: 12px;
+
+        padding-bottom: 30px;
+    }
 }
 
 
@@ -569,6 +725,53 @@ html {
     .contact-links img {
         width: 60px;
     }
+
+    .weather-news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-content {
+        margin-right: 25px;
+        margin-top: 20px;
+    }
+
+    .weather-content img {
+        margin-left: 0;
+    }
+
+    .news-content {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 10px;
+    }
+
+   .news-headline{
+    padding: 10px;
+    margin-left: 18px;
+    margin-right: 18px;
+   }
+
+    .headline img {
+        width: 100px;
+        height: auto;
+    }
+
+    .headline-content{
+        padding: 10px;
+    }
+
+    .headline-content a{
+        font-size: small;
+
+    }
+
+    .headline-content p{
+        text-align: left;
+        font-size: 12px;
+    }
 }
 
 
@@ -587,6 +790,43 @@ html {
 
     .contact-links img {
         width: 60px;
+    }
+
+    .weather-content {
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    
+    .weather-news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-content img {
+        margin-left: 0;
+    }
+
+    .news-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .news-headline {
+        padding: 10px;
+    }
+
+    .news-headlines-gif img {
+        width: 80px;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+
+    .headline-content p{
+        text-align: left;
+        font-size: 12px;
     }
 }
 
