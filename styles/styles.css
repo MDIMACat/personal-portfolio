@@ -203,10 +203,20 @@ html {
     
 }
 
-#weather-info p{
-    font-weight: 220;
-    margin-top: 50px;
-    margin-left: 2px;
+#weather-info {
+    font-weight: 200;
+}
+
+#location-place {
+    margin-top: 33px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+#temp-place {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
 }
 
 .weather-content img {
