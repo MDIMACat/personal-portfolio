@@ -41,6 +41,8 @@ const successCallback = (position) => {
     .catch((error) => {
       const tempElement = document.getElementById("temp");
       tempElement.innerHTML = "No data available";
+       const locationElment = document.getElementById("location");
+      locationElment.innerHTML = "No data available";
       console.error("Error fetching weather data:", error);
     });
 
@@ -77,6 +79,8 @@ const successCallback = (position) => {
 const errorCallback = (error) => {
   const tempElement = document.getElementById("temp");
   tempElement.innerHTML = "No data available";
+   const locationElment = document.getElementById("location");
+    locationElment.innerHTML = "No data available";
   console.error("Error fetching weather data:", error);
 };
 
