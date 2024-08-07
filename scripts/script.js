@@ -50,11 +50,9 @@ const successCallback = (position) => {
       const city = data.results[0].components.city;
 
       const locationElment = document.getElementById("location");
-        locationElment.innerHTML = city;
+      locationElment.innerHTML = city;
       const country = data.results[0].components.country_code;
-
-      const newsUrl =
-        `https://newsdata.io/api/1/latest?country=${country}&language=en&apikey=pub_50223ff1354b8802cf901dfce78fd4cc91feb`;
+      const newsUrl = `https://newsdata.io/api/1/latest?country=${country}&language=en&apikey=pub_50223ff1354b8802cf901dfce78fd4cc91feb`;
 
       fetch(newsUrl)
         .then((response) => response.json())
