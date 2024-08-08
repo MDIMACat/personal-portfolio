@@ -73,7 +73,7 @@ html {
 
 .nav ul {
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(7, auto);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -592,7 +592,7 @@ a:hover {
 }
 @media (max-width: 1200px) {
     .nav ul {
-        grid-template-columns: repeat(6, auto);
+        grid-template-columns: repeat(7, auto);
         gap: 15px;
         padding-right: 35px;
     }
@@ -617,10 +617,6 @@ a:hover {
     .news-content {
         display: flex;
         margin-top: 10px;
-    }
-
-    .news-headline {
-
     }
 
     .news-headlines-gif img {
