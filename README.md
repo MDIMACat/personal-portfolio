@@ -16,6 +16,7 @@ To view my portfolio, visit [My Portfolio](https://mdimacat.github.io/personal-p
 ## Technologies Used
 - HTML
 - CSS
+- JavaScript
 
 
 ## Contact Information
