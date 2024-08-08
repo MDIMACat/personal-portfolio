@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
       navigator.geolocation.getCurrentPosition(successCallback, errorCallback, options);
     } else {
       console.error("Geolocation is not supported by your browser.");
+      handleError("location", "Geolocation not supported by browser");
+      handleError("temp", "Geolocation not supported by browser");
     }
   }
 
@@ -50,11 +52,16 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(geoCodingUrl)
       .then((response) => response.json())
       .then((data) => {
-        const city = data.results[0].components.city;
-        const country = data.results[0].components.country_code;
+        if (data.results && data.results[0]) {
+          const city = data.results[0].components.city || "Unknown location";
+          const country = data.results[0].components.country_code || "Unknown country";
 
-        updateElementContent("location", city);
-        updateNewsData(country);
+          updateElementContent("location", city);
+          updateNewsData(country);
+        } else {
+          console.error("Invalid geocoding response:", data);
+          handleError("location", "Location data not available");
+        }
       })
       .catch((error) => handleError("location", "Error fetching location data:", error));
   }
@@ -68,8 +75,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const newsLink = document.querySelector(".headline-content a");
         if (newsLink) {
           const latestNews = data.results[0];
-          newsLink.href = latestNews.link;
-          newsLink.innerHTML = latestNews.title;
+          if (latestNews) {
+            newsLink.href = latestNews.link;
+            newsLink.innerHTML = latestNews.title;
+          } else {
+            newsLink.innerHTML = "No news available";
+          }
         }
       })
       .catch((error) => console.error("Error fetching news data:", error));
@@ -84,7 +95,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function handleError(elementId, message, error) {
     updateElementContent(elementId, "No data available");
-    console.error(message, error);
+    if (error) {
+      console.error(message, error);
+    } else {
+      console.error(message);
+    }
   }
 
   const successCallback = (position) => {
