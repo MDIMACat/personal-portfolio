@@ -420,6 +420,7 @@ a:hover {
     padding: 4rem 0;
     display: grid;
     justify-items: center;
+    padding-bottom: 0px;
 }
 
 .project-content {
