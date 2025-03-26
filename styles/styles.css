@@ -283,7 +283,7 @@ a:hover {
 
 .news-heading h1{
     font-weight: 600;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     animation: news-heading 3s ease-in forwards;
 }
 
@@ -489,8 +489,7 @@ a:hover {
 
 #education {
     padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-bottom: 50px;
+    padding-bottom: 2rem;
 }
 
 .education-heading {
@@ -501,7 +500,7 @@ a:hover {
 
 .education-heading h1 {
 
-    padding-bottom: 25px;
+    padding-bottom: 12px;
     font-weight: 600;
     animation: educationAnimation 3s ease-in forwards;
 }
@@ -540,6 +539,50 @@ a:hover {
 
 .education-line-content img:hover {
     transform: scale(1.1);
+}
+
+
+
+/* Experience Section */
+
+#experience {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.experience-line-text img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.experience-line-text img:hover{
+    transform: scale(1.1);
+}
+
+.experience h1 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    animation: experienceAnimation 3s ease-in forwards;
+}
+
+@keyframes experienceAnimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-25px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 #contact-me {
